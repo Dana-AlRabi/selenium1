@@ -1,16 +1,16 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
 
-public class AuthLogin extends driverClass {
-    public driverClass driver1;
+public class AuthLogin extends DriverClass {
+    public DriverClass driver1;
 
-    public AuthLogin(driverClass driver1) {
+    public AuthLogin(DriverClass driver1) {
         this.driver1 = driver1;
     }
 

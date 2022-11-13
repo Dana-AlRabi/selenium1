@@ -1,15 +1,15 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class CheckBox extends driverClass {
-    public driverClass driver1;
+public class CheckBox extends DriverClass {
+    public DriverClass driver1;
 
-    public CheckBox(driverClass driver1) {
+    public CheckBox(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @When("user select first checkbox")

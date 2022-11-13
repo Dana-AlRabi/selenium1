@@ -1,16 +1,16 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class forgotPassword extends driverClass {
+public class ForgotPassword extends DriverClass {
 
-    private driverClass driver1;
+    private DriverClass driver1;
 
-    public forgotPassword(driverClass driver1) {
+    public ForgotPassword(DriverClass driver1) {
         this.driver1 = driver1;
     }
 

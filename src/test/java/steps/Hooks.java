@@ -1,15 +1,15 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class hooks extends driverClass {
+public class Hooks extends DriverClass {
 
-    private driverClass driver1;
+    private DriverClass driver1;
 
-    public hooks(driverClass driver1) {
+    public Hooks(DriverClass driver1) {
         this.driver1= driver1;
     }
 

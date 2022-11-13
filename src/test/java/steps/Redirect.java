@@ -1,16 +1,16 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class redirect extends driverClass {
+public class Redirect extends DriverClass {
 
-    public driverClass driver1;
+    public DriverClass driver1;
 
-    public redirect (driverClass driver1) {
+    public Redirect(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @And("user triggers a redirect")

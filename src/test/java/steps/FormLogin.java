@@ -1,6 +1,6 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -9,11 +9,11 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
-public class formLogin extends driverClass {
+public class FormLogin extends DriverClass {
 
-    public driverClass driver1;
+    public DriverClass driver1;
 
-    public formLogin(driverClass driver1) {
+    public FormLogin(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @And("user enter UserName And PassWord")
@@ -50,7 +50,7 @@ public class formLogin extends driverClass {
     @And("Error message is displaying")
     public void errorMessageIsDisplaying() {
         //assert error
-        driver1.driver.findElement(By.xpath("//div[@id='flash']"));
+        driver.findElement(By.xpath("//div[@id='flash']"));
     }
 
     @When("user clicks logout")

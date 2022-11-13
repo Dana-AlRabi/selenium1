@@ -1,14 +1,14 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class AddRemoveElements extends driverClass {
-    public driverClass driver1;
+public class AddRemoveElements extends DriverClass {
+    public DriverClass driver1;
 
-    public AddRemoveElements(driverClass driver1) {
+    public AddRemoveElements(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @When("user adds a new element")

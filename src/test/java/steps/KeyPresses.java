@@ -1,15 +1,14 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
-public class keyPresses extends driverClass {
+public class KeyPresses extends DriverClass {
 
-    public driverClass driver1;
-    public keyPresses (driverClass driver1) {
+    public DriverClass driver1;
+    public KeyPresses(DriverClass driver1) {
         this.driver1 = driver1;
     }
 

@@ -1,15 +1,15 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class BrokenImage extends driverClass {
-    public driverClass driver1;
+public class BrokenImage extends DriverClass {
+    public DriverClass driver1;
 
-    public BrokenImage(driverClass driver1) {
+    public BrokenImage(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @When("user verify id image is broken")

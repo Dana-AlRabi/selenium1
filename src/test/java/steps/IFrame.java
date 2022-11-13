@@ -1,15 +1,15 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class iFrame extends driverClass {
-    public driverClass driver1;
+public class IFrame extends DriverClass {
+    public DriverClass driver1;
 
-    public iFrame (driverClass driver1) {
+    public IFrame(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @When("user navigate to timnymce field")

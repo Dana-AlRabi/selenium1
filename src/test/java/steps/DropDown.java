@@ -1,17 +1,15 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
-import java.nio.channels.SelectableChannel;
+public class DropDown extends DriverClass {
+    public DriverClass driver1;
 
-public class dropDown extends driverClass {
-    public driverClass driver1;
-
-    public dropDown (driverClass driver1) {
+    public DropDown(DriverClass driver1) {
         this.driver1 = driver1;
     }
 

@@ -1,15 +1,15 @@
 package steps;
 
-import Driver.driverClass;
+import Driver.DriverClass;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
-public class AdsPopup extends driverClass {
-    public driverClass driver1;
+public class AdsPopup extends DriverClass {
+    public DriverClass driver1;
 
-    public AdsPopup(driverClass driver1) {
+    public AdsPopup(DriverClass driver1) {
         this.driver1 = driver1;
     }
     @When("user close ad popup")

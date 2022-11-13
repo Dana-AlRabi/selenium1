@@ -3,13 +3,13 @@ package Driver;
 import org.openqa.selenium.WebDriver;
 
 
-public class driverClass {
+public class DriverClass {
 
     public static WebDriver driver;
 
-    public static final String SitePage = "http://the-internet.herokuapp.com/";
+    public static final String sitePage = "http://the-internet.herokuapp.com/";
     private String site;
-    public String redirectUrl = SitePage + site;
+    public String redirectUrl = sitePage + site;
 
 
     public String getSite() {
