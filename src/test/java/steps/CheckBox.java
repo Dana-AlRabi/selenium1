@@ -37,7 +37,7 @@ public class CheckBox extends DriverClass {
     public void theCheckboxIsUnchecked() {
 
         boolean checkbox = driver.findElement(By.xpath("(//input[@type='checkbox'])[1]")).isSelected();
-        if (checkbox == false){
+        if (!checkbox){
 
             System.out.println("checkbox 1 is unchecked");
         }

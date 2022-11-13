@@ -18,7 +18,7 @@ public class BrokenImage extends DriverClass {
         WebElement i = driver.findElement(By.xpath("//img[@src='asdf.jpg']"));
         Boolean img = (Boolean) ((JavascriptExecutor)driver).executeScript("return arguments[0].complete " + "&& typeof arguments[0].naturalWidth != \"undefined\" "
                 + "&& arguments[0].naturalWidth > 0", i);
-        if (img == false){
+        if (!img){
             System.out.println("image is broken");
         }
         else{
