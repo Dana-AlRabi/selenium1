@@ -26,31 +26,14 @@ public class Redirect extends DriverClass {
         driver.findElement(By.linkText("500"));
     }
 
-
-  /*  @When("user click on a {string}")
-    public void userClickOnACode(DataTable table) {
-
-        driver1.driver.findElement(By.className("code"));
-
-      // List<TableRow> code = table.getRows();
-        // List<List<int>> code = table.getRows();
-      //  for (List<int> Code : code) {
-        //  driver1.driver.findElement(By.className("$code"));
-
-        } */
-
     @When("user click on Success code")
     public void userClickOnSuccessCode() {
         driver.findElement(By.linkText("200")).click();
-
-
     }
 
     @When("user click on redirection code")
     public void userClickOnRedirectionCode() {
         driver.findElement(By.linkText("301")).click();
-
-        
     }
 
     @When("user click on client error code")
