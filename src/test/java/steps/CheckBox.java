@@ -5,12 +5,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
-public class checkBox extends driverClass {
+public class CheckBox extends driverClass {
     public driverClass driver1;
 
-    public checkBox (driverClass driver1) {
+    public CheckBox(driverClass driver1) {
         this.driver1 = driver1;
     }
     @When("user select first checkbox")

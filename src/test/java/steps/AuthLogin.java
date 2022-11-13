@@ -7,10 +7,10 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
 
-public class authLogin extends driverClass {
+public class AuthLogin extends driverClass {
     public driverClass driver1;
 
-    public authLogin (driverClass driver1) {
+    public AuthLogin(driverClass driver1) {
         this.driver1 = driver1;
     }
 
