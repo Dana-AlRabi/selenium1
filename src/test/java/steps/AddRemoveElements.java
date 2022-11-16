@@ -9,9 +9,6 @@ import static Driver.DriverClass.driver;
 
 public class AddRemoveElements  {
 
-
-    public AddRemoveElements() {
-    }
     @When("user adds a new element")
     public void userAddsANewElement() {
         driver.findElement(By.xpath("//button[normalize-space()='Add Element']")).click();
