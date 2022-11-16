@@ -9,13 +9,10 @@ import org.openqa.selenium.By;
 
 import java.util.List;
 
-public class FormLogin extends DriverClass {
+import static Driver.DriverClass.driver;
 
-    public DriverClass driver1;
+public class FormLogin{
 
-    public FormLogin(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
     @And("user enter UserName And PassWord")
     public void userEnterUserNameAndPassWord(DataTable table) {
         List<List<String>> credentials = table.cells();

@@ -6,12 +6,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
-public class BrokenImage extends DriverClass {
-    public DriverClass driver1;
+import static Driver.DriverClass.driver;
 
-    public BrokenImage(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
+public class BrokenImage  {
+
+
+
     @When("user verify id image is broken")
     public void userVerifyIdImageIsBroken() {
 

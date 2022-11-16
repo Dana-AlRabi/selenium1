@@ -6,12 +6,11 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class IFrame extends DriverClass {
-    public DriverClass driver1;
+import static Driver.DriverClass.driver;
 
-    public IFrame(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
+public class IFrame {
+
+
     @When("user navigate to timnymce field")
     public void userNavigateToTimnymceField() {
         //Frame selection

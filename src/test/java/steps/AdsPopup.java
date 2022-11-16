@@ -6,11 +6,13 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 
-public class AdsPopup extends DriverClass {
-    public DriverClass driver1;
+import static Driver.DriverClass.driver;
 
-    public AdsPopup(DriverClass driver1) {
-        this.driver1 = driver1;
+public class AdsPopup  {
+
+
+    public AdsPopup() {
+
     }
     @When("user close ad popup")
     public void userCloseAdPopup() {

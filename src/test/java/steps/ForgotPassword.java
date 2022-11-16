@@ -6,13 +6,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class ForgotPassword extends DriverClass {
+import static Driver.DriverClass.driver;
 
-    private DriverClass driver1;
-
-    public ForgotPassword(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
+public class ForgotPassword  {
 
     @When("user enters the email {string}")
     public void userEntersTheEmail(String email) {

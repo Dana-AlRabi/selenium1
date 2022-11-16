@@ -6,12 +6,10 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.Select;
 
-public class DropDown extends DriverClass {
-    public DriverClass driver1;
+import static Driver.DriverClass.driver;
 
-    public DropDown(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
+public class DropDown {
+    public DriverClass driver1;
 
     Select ddlOptions = new Select(driver.findElement(By.xpath("//select[@id='dropdown']")));
     @When("user selects option {string}")

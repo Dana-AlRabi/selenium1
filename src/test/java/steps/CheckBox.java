@@ -6,11 +6,13 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class CheckBox extends DriverClass {
-    public DriverClass driver1;
+import static Driver.DriverClass.driver;
 
-    public CheckBox(DriverClass driver1) {
-        this.driver1 = driver1;
+public class CheckBox {
+
+
+    public CheckBox() {
+
     }
     @When("user select first checkbox")
     public void userSelectFirstCheckbox() {

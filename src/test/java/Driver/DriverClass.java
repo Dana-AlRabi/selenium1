@@ -9,7 +9,7 @@ public class DriverClass {
 
     public static final String sitePage = "http://the-internet.herokuapp.com/";
     private String site;
-    public String redirectUrl = sitePage + site;
+    private String redirectUrl = sitePage + site;
 
 
     public String getSite() {

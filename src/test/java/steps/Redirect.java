@@ -6,13 +6,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class Redirect extends DriverClass {
+import static Driver.DriverClass.driver;
 
-    public DriverClass driver1;
+public class Redirect  {
 
-    public Redirect(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
     @And("user triggers a redirect")
     public void userTriggersARedirect() {
         driver.findElement(By.id("redirect")).click();

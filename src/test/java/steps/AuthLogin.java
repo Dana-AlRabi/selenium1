@@ -6,13 +6,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
+import static Driver.DriverClass.driver;
+public class AuthLogin {
 
-public class AuthLogin extends DriverClass {
-    public DriverClass driver1;
-
-    public AuthLogin(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
 
     @When("user fills the pop-up with {string} and {string}")
     public void userFillsThePopUpWithAnd(String userName, String passWord) {

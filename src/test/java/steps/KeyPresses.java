@@ -5,12 +5,9 @@ import io.cucumber.java.en.And;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 
-public class KeyPresses extends DriverClass {
+import static Driver.DriverClass.driver;
 
-    public DriverClass driver1;
-    public KeyPresses(DriverClass driver1) {
-        this.driver1 = driver1;
-    }
+public class KeyPresses {
 
 
     @And("user press any key on the keyboard")

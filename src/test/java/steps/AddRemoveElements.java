@@ -5,11 +5,12 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
 
-public class AddRemoveElements extends DriverClass {
-    public DriverClass driver1;
+import static Driver.DriverClass.driver;
 
-    public AddRemoveElements(DriverClass driver1) {
-        this.driver1 = driver1;
+public class AddRemoveElements  {
+
+
+    public AddRemoveElements() {
     }
     @When("user adds a new element")
     public void userAddsANewElement() {
