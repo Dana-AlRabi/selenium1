@@ -1,6 +1,5 @@
 package steps;
 
-import Driver.DriverClass;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -8,7 +7,7 @@ import org.openqa.selenium.By;
 
 import static Driver.DriverClass.driver;
 
-public class Redirect  {
+public class Redirect {
 
     @And("user triggers a redirect")
     public void userTriggersARedirect() {
@@ -49,14 +48,13 @@ public class Redirect  {
 
         //Verify if user is redirected to the proper code page
         String CurrentUrl = driver.getCurrentUrl();
-        if (driver.getCurrentUrl().contains("status_codes/200")) {
+        if (CurrentUrl.contains("status_codes/200")) {
             driver.findElement(By.xpath("//p[contains(text(),'This page returned a 200 status code.')]")).isDisplayed();
             System.out.println("User is on Success status page");
-        } else if (driver.getCurrentUrl().equalsIgnoreCase("http://the-internet.herokuapp.com/status_codes/301")) {
+        } else if (CurrentUrl.equalsIgnoreCase("http://the-internet.herokuapp.com/status_codes/301")) {
             driver.findElement(By.xpath("//p[contains(text(),'This page returned a 301 status code.')]")).isDisplayed();
             System.out.println("User is on  Redirection page");
-        } else if (driver.getCurrentUrl().equalsIgnoreCase("http://the-internet.herokuapp.com/status_codes/404")) {
-            driver.getCurrentUrl().equalsIgnoreCase("http://the-internet.herokuapp.com/status_codes/404");
+        } else if (CurrentUrl.equalsIgnoreCase("http://the-internet.herokuapp.com/status_codes/404")) {
             driver.findElement(By.xpath("//p[contains(text(),'This page returned a 404 status code.')]")).isDisplayed();
             System.out.println("User is on Client Error page");
         } else {
