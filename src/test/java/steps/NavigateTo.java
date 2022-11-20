@@ -3,7 +3,7 @@ package steps;
 import Driver.DriverClass;
 import io.cucumber.java.en.Given;
 
-import static Driver.DriverClass.sitePage;
+import static Driver.DriverClass.SITE_PAGE;
 import static Driver.DriverClass.driver;
 
 public class NavigateTo {
@@ -18,7 +18,7 @@ public class NavigateTo {
     @Given("user navigates to the {string}")
     public void userNavigatesToThe(String site) {
         driver1 .setSite(site);
-        driver1 .setRedirectUrl(sitePage + driver1 .getSite());
+        driver1 .setRedirectUrl(SITE_PAGE + driver1 .getSite());
         driver.navigate().to(driver1 .getRedirectUrl());
         driver.manage().window().maximize();
     }

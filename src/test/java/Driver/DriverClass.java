@@ -7,9 +7,9 @@ public class DriverClass {
 
     public static WebDriver driver;
 
-    public static final String sitePage = "http://the-internet.herokuapp.com/";
+    public static final String SITE_PAGE = "http://the-internet.herokuapp.com/";
     private String site;
-    private String redirectUrl = sitePage + site;
+    private String redirectUrl = SITE_PAGE + site;
 
 
     public String getSite() {
